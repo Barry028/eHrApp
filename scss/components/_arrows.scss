@@ -1,0 +1,47 @@
+/*  Arrows  */
+.c-arrow {
+	border-color: transparent;
+	border-style: dashed;
+	border-width: 4px;
+	font-size: inherit;
+	display: inline-block;
+	vertical-align: middle;
+
+	&.arrowR {
+		border-left-color: currentcolor;
+		border-left-style: solid;
+
+		&:hover {
+			border-left-color: currentcolor;
+		}
+	}
+
+	&.arrowL {
+		border-right-color: currentcolor;
+		border-right-style: solid;
+
+		&:hover {
+			border-right-color: currentcolor;
+		}
+	}
+
+	&.arrowT {
+		border-bottom-color: currentcolor;
+		border-bottom-style: solid;
+
+		&:hover {
+			border-bottom-color: currentcolor;
+		}
+	}
+	&.arrowB {
+		border-top-color: currentcolor;
+		border-top-style: solid;
+
+		&:hover {
+			border-top-color: currentcolor;
+		}
+
+	}
+
+}
+

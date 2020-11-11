@@ -1,0 +1,38 @@
+.tab--ver1 .tab-nav {
+    display: inline-block;
+    vertical-align: bottom;
+    border: 1px solid transparent;
+    color: #a7b1b6;
+    font-size: .875rem;
+    margin: 0 0 -1px;
+    padding: .5rem 1rem .25rem;
+    transition: all .125s ease-in-out;
+    cursor: pointer;
+}
+
+.tab--ver1 .tab-nav:hover {
+    color: #72828a;
+}
+
+.tab--ver1 > input:checked+.tab-nav {
+    color: #233138;
+    font-weight: bolder;
+    font-size: .9375rem;
+    border: 1px solid #dee2e6;
+    border-top-left-radius: .125rem;
+    border-top-right-radius: .125rem;
+    border-top: 2px solid rgba(14, 134, 212, .82);
+    border-bottom: 2px solid white;
+    border-bottom: 2px solid white\9;
+    z-index: 1;
+}
+
+.tab--ver1-content {
+    display: none;
+}
+
+.tab--ver1 .tab--ver1-content {
+    border-top: 1px solid #dee2e6;
+    padding-top: .75rem;
+    animation: fadeIn .75s ease-in-out;
+}

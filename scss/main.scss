@@ -1,0 +1,52 @@
+@charset  "utf-8";
+
+// helper
+@import "helpers/functions";
+@import "helpers/variables";
+// @import "helpers/root";
+
+// _mixins
+@import "mixins";
+
+// base
+@import "base/reset";
+@import "base/typography";
+
+// layout
+@import "layout/grid";
+@import "layout/utilities";
+@import "layout/margin";
+@import "layout/padding";
+
+// Pages
+@import "pages/ehr";
+
+// components
+@import "components/buttons";
+@import "components/masks";
+@import "components/texts";
+@import "components/rtTools";
+// @import "components/tooltips";
+// @import "components/alerts";
+// @import "components/arrows";
+// @import "components/badges";
+// @import "components/boxShadows";
+// @import "components/cards";
+// @import "components/heading";
+// @import "components/images";
+// @import "components/inputs";
+// @import "components/lists";
+// @import "components/logos";
+
+// @import "components/modals";
+// @import "components/opacitys";
+// @import "components/paginations";
+// @import "components/panels";
+// @import "components/roundeds";
+// @import "components/tables";
+// @import "components/tabs";
+// @import "components/toasts";
+// @import "components/toggles";
+// @import "components/tooltips";
+
+// write your custom styles here!$color

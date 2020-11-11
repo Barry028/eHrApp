@@ -1,0 +1,45 @@
+.breadcrumbs {
+  margin-top: 1rem;
+  margin-left: 1rem;
+
+  .breadcrumbs-row {
+    display: inline-block;
+    font-size: $font-size-xs;
+    padding-left: .25rem;
+    width: 100%;
+  }
+
+  li {
+    float: left;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+
+    &:not(:first-child) {
+      margin-left: .25rem;
+
+      &:before {
+        content: "\e9b7";
+        font-size: 1rem;
+        font-family: 'JobBank' !important;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        color: #A7B1B6;
+        margin-left: .5rem;
+        position: absolute;
+        top: -.125rem;
+        left: -2rem;
+      }
+    }
+  }
+
+  .jb-df-home {
+    font-size: $font-size-sm;
+    margin-right: .25rem;
+  }
+
+}

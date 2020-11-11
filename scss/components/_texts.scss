@@ -1,0 +1,145 @@
+@each $color, $value in $colors {
+  .txt--#{$color} {
+    color: $value;
+  }
+}
+
+// .text--gradient--brand-red.text--gradient--brand-red.text--brand-red,
+// .gradient--brand-red:not(i):before,i.gradient--brand-red {
+//     color: $brand-red;
+//     background: $brand-red;
+//     background: -moz-linear-gradient(0deg, rgba(213, 9, 24, 1) 0%, rgba(255, 75, 43, 1) 100%);
+//     background: -webkit-linear-gradient(0deg, rgba(213, 9, 24, 1) 0%, rgba(255, 75, 43, 1) 100%);
+//     background: linear-gradient(0deg, rgba(213, 9, 24, 1) 0%, rgba(255, 75, 43, 1) 100%);
+//     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d50918", endColorstr="#ff4b2b", GradientType=1);
+//     -webkit-background-clip: text;
+//     -webkit-text-fill-color: transparent;
+// }
+
+// .text--gradient--black.text--gradient--black.text--black,
+// .gradient--brand-black:not(i):before,i.gradient--brand-black {
+//     color: $dark;
+//     background: $dark;
+//     background: -moz-linear-gradient(90deg, rgba(35, 49, 56, 0) 0%, rgba(35, 49, 56, 1) 100%);
+//     background: -webkit-linear-gradient(90deg, rgba(35, 49, 56, 0) 0%, rgba(35, 49, 56, 1) 100%);
+//     background: linear-gradient(90deg, rgba(35, 49, 56, 0) 0%, rgba(35, 49, 56, 1) 100%);
+//     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#233138", endColorstr="#233138", GradientType=1);
+//     -webkit-background-clip: text;
+//     -webkit-text-fill-color: transparent;
+// }
+
+// .link--black.link--black {
+//     color: $dark
+// }
+
+// .link--black.link--black:hover {
+//     color: lighten($dark , 20%)
+// }
+
+// .link--grey.link--grey {
+//     color: $grey
+// }
+
+// .link--grey.link--grey:hover {
+//     color: lighten($grey , 20%)
+// }
+
+// .link--lightgrey.link--lightgrey {
+//     color: $lightgrey
+// }
+
+// .link--lightgrey.link--lightgrey:hover {
+//     color: $secondary
+// }
+
+// .link--danger.link--danger {
+//     color: $danger
+// }
+
+// .link--danger.link--danger:hover {
+//     color: darken($danger , 5%)
+// }
+
+.text--48.text--48 {
+  font-size: 3rem;
+}
+
+.text--36.text--36 {
+  font-size: 2rem;
+}
+
+.text--24.text--24 {
+  font-size: 1.5rem;
+}
+
+.text--22.text--22 {
+  font-size: 1.375rem;
+}
+
+.text--20.text--20 {
+  font-size: 1.25rem;
+}
+
+.text--18.text--18 {
+  font-size: 1.125rem;
+}
+
+.text--17.text--17 {
+  font-size: 1.0625rem;
+}
+
+.text--16.text--16 {
+  font-size: 1rem;
+}
+
+.text--15.text--15 {
+  font-size: 0.9375rem;
+}
+
+.text--14.text--14 {
+  font-size: 0.875rem;
+}
+
+.text--13.text--13 {
+  font-size: 0.8125rem;
+}
+
+.text--12.text--12 {
+  font-size: 0.75rem;
+}
+
+.font-w--100 {
+  font-weight: 100;
+}
+
+.font-w--200 {
+  font-weight: 200;
+}
+
+.font-w--300 {
+  font-weight: 300;
+}
+
+.font-w--400 {
+  font-weight: 400;
+}
+
+.font-w--500 {
+  font-weight: 500;
+}
+
+.font-w--600 {
+  font-weight: 600;
+}
+
+.font-w--700 {
+  font-weight: 700;
+}
+
+.font-w--800 {
+  font-weight: 800;
+}
+
+.font-w--900 {
+  font-weight: 900;
+}

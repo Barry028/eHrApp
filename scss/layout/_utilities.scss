@@ -1,0 +1,137 @@
+.push-left {
+    float: left !important
+}
+
+.push-right {
+    float: right !important
+}
+
+.no-float {
+    float: none !important
+}
+
+.hide,
+.hidden {
+    display: none
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.not-select {
+    cursor: none
+}
+
+@media all and (max-width:992px) {
+    .hidden-md {
+        display: none !important
+    }
+
+}
+
+@media all and (max-width:768px) {
+    .hidden-sm {
+        display: none !important
+    }
+
+}
+
+@media all and (max-width:480px) {
+    .hidden-xs {
+        display: none !important
+    }
+
+}
+
+@media all and (min-width:768px) {
+    .hidden-sm-up {
+        display: none !important
+    }
+
+}
+
+.inline {
+    display: inline !important
+}
+
+.block {
+    display: block !important
+}
+
+.inline-block {
+    display: inline-block !important
+}
+
+.center-block {
+    display: block !important;
+    margin-right: auto !important;
+    margin-left: auto !important
+}
+
+.table {
+    display: table;
+}
+
+.table-fixed {
+    display: table;
+    table-layout: fixed;
+}
+
+.table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.table-row {
+    display: table-row;
+}
+
+.align-center,
+.center {
+    text-align: center !important
+}
+
+.align-left {
+    text-align: left !important
+}
+
+.align-right {
+    text-align: right !important
+}
+
+.align-justify {
+    text-align: justify !important
+}
+
+.align-middle {
+    vertical-align: middle !important
+}
+
+.align-top {
+    vertical-align: top !important
+}
+
+.align-bottom {
+    vertical-align: bottom !important
+}
+
+.no-border {
+    border: none !important
+}
+
+.text-ellipsis {
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.link-h-underline:hover {
+    text-decoration: underline
+}
+
+.inline-block--middle {
+    display: inline-block;
+    vertical-align: middle
+}

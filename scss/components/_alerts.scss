@@ -1,0 +1,276 @@
+/*  Alerts  */
+.alert-block {
+  border: 1px solid transparent;
+  border-radius: 2px;
+  font-size: .8125rem;
+  padding: .75rem 1.5rem;
+
+  i {
+    vertical-align: middle
+  }
+
+  font {
+    vertical-align: middle;
+  }
+
+  .close {
+    position: absolute;
+    right: .75rem;
+    top: .75rem;
+    font-size: .75rem;
+    color: $grey;
+    cursor: pointer;
+
+    &:hover {
+      color: rgba($grey, .7);
+    }
+
+  }
+
+  a {
+    font-weight: bolder;
+    vertical-align: middle;
+  }
+
+  &.alert-block-time {
+    padding-left: 3rem;
+
+    img {
+      position: absolute;
+      left: 6px;
+      top: 0;
+    }
+
+  }
+
+}
+
+.alert-primary {
+  background-color: #cce9fc;
+  border-color: #b4defa;
+  color: #0b68a4;
+}
+
+.alert-primary a {
+  color: #09598c;
+}
+
+.alert-primary a:hover {
+  color: #0c77bc;
+}
+
+.alert-secondary {
+  background-color: #e9f5fb;
+  border-color: #d4ebf7;
+  color: #3da8db;
+}
+
+.alert-secondary a {
+  color: #289ed7;
+}
+
+.alert-secondary a:hover {
+  color: #52b1df;
+}
+
+.alert-apply {
+  background-color: #f3f7fd;
+  border-color: #dee9f8;
+  color: #2868c9;
+}
+
+.alert-apply a {
+  color: #245db4;
+}
+
+.alert-apply a:hover {
+  color: #3474d7;
+}
+
+.alert-positive {
+  background-color: #cff8f4;
+  border-color: #b9f5ee;
+  color: #16998b;
+}
+
+.alert-positive a {
+  color: #138376;
+}
+
+.alert-positive a:hover {
+  color: #19b09f;
+}
+
+.alert-negative {
+  background-color: #ffede2;
+  border-color: #ffdec8;
+  color: #ff7216;
+}
+
+.alert-negative a {
+  color: #fc6300;
+}
+
+.alert-negative a:hover {
+  color: #ff8230;
+}
+
+.alert-danger {
+  background-color: #fff6f7;
+  border-color: #fededf;
+  color: #f8313c;
+}
+
+.alert-danger a {
+  color: #f81825;
+}
+
+.alert-danger a:hover {
+  color: #f94954;
+}
+
+.alert-warning {
+  background-color: #fffaed;
+  border-color: #fff4d3;
+  color: #d39e00;
+}
+
+.alert-warning a {
+  color: #ba8b00;
+}
+
+.alert-warning a:hover {
+  color: #edb100;
+}
+
+.alert-success {
+  background-color: #cff8df;
+  border-color: #b9f5d0;
+  color: #169949;
+}
+
+.alert-success a {
+  color: #13833e;
+}
+
+.alert-success a:hover {
+  color: #19b053;
+}
+
+.alert-cyan {
+  background-color: #cff3f8;
+  border-color: #b9edf5;
+  color: #168899;
+}
+
+.alert-cyan a {
+  color: #137483;
+}
+
+.alert-cyan a:hover {
+  color: #199bb0;
+}
+
+.alert-yellow {
+  background-color: #fffded;
+  border-color: #fffbd4;
+  color: #ffe608;
+}
+
+.alert-yellow a {
+  color: #eed500;
+}
+
+.alert-yellow a:hover {
+  color: #ffe822;
+}
+
+.alert-pink {
+  background-color: #fff4f6;
+  border-color: #ffdae1;
+  color: #ff5b78;
+}
+
+.alert-pink a {
+  color: #ff4263;
+}
+
+.alert-pink a:hover {
+  color: #ff758d;
+}
+
+.alert-purple {
+  background-color: #eeeefa;
+  border-color: #dbdbf3;
+  color: #4340c2;
+}
+
+.alert-purple a {
+  color: #3b39b0;
+}
+
+.alert-purple a:hover {
+  color: #5654c8;
+}
+
+.alert-grey {
+  background-color: #eff1f2;
+  border-color: #e1e5e7;
+  color: #5b686e;
+}
+
+.alert-grey a {
+  color: #4f5b60;
+}
+
+.alert-grey a:hover {
+  color: #66757c;
+}
+
+.alert-dark {
+  background-color: #8aa8b6;
+  border-color: #7b9cac;
+  color: #0f1619;
+}
+
+.alert-dark a {
+  color: #060809;
+}
+
+.alert-dark a:hover {
+  color: #192328;
+}
+
+.alert-lightgrey {
+  background-color: #f0f2f2;
+  border-color: #e2e5e7;
+  color: #8b989f;
+}
+
+.alert-lightgrey a {
+  color: #7d8c93;
+}
+
+.alert-lightgrey a:hover {
+  color: #99a5aa;
+}
+
+// @each $color,$value in $colors {
+//   .alert-#{$color} {
+//     background-color: lighten($value, 45%);
+//     border-color: lighten($value, 40%);
+//     color: darken($value, 10%);
+
+//     a {
+//       color: darken($value, 15%);
+
+//       &:hover {
+//         color: darken($value, 5%);
+//       }
+//     }
+//   }
+// }
+
+span.required {
+  color: $danger;
+}

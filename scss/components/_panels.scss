@@ -1,0 +1,71 @@
+
+.panel {
+  background-color: #fff;
+  font-size: 0;
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid rgba(35, 49, 56, .06);
+  border-bottom: 1px solid #e0e0e0;
+  border-radius: 4px;
+  box-shadow: 0 0.0625rem 0.9375rem 0.0625rem rgba(62, 57, 107, .07);
+}
+
+.panel .btn {
+  border-radius: 4px
+}
+
+.panel .rt-tools {
+  font-size: .875rem;
+  position: absolute;
+  right: 1rem;
+  top: 2rem;
+}
+
+.panel .rt-tools > i {
+  font-size: .75rem;
+  margin-left: .125rem;
+}
+
+@media all and (max-width:768px) {
+  .panel .heading {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+
+.panel .panel-body {
+  border-top: 1px solid #dfe6e9;
+  padding-top: .75rem;
+}
+
+.panel-toolsbar  {
+  margin-bottom: 1rem;
+}
+
+
+.panel-toolsbar .rt-txt {
+  color: #72828A;
+  font-size: .75rem;
+  position: absolute;
+  right: .5rem;
+  bottom: 0;
+}
+
+.panel-toolsbar .rt-txt strong {
+  color: #233138;
+  font-size: 1.125rem
+}
+
+.btn-foot .btn {
+  margin: 0 .5rem;
+}
+
+.panel-content {
+  margin: .5rem 0;
+}
+
+.panel-toolsbar .btn,
+.btn-foot .btn {
+  width: 12rem;
+}

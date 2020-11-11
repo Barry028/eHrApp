@@ -1,0 +1,142 @@
+.ribbon {
+  color: $white;
+  font-size: $font-size-xxs;
+  position: absolute;
+  top: -.25rem;
+  padding-top: .75rem;
+  text-align: center;
+  user-select: none;
+  width: 2.5rem;
+  z-index: 1;
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+
+  &:before {
+    left: -.25rem;
+    transform: matrix(1, 0, -1, 1, 2, 0);
+    background-color: $grey;
+    height: .25rem;
+    width: 100%;
+  }
+
+  &:after {
+    bottom: -1.25rem;
+    left: 0;
+    border-style: solid;
+    border-width: .875rem 1.25rem;
+    border-color: $black $black transparent $black;
+  }
+
+  &.ribbon-rt {
+    right: .5rem;
+  }
+
+  &.ribbon-lt {
+    left: 1rem;
+  }
+
+  .ribbon--blue,
+  .ribbon--orange {
+    padding-top: .5rem;
+    font-size: .9375rem;
+  }
+
+  &.ribbon--blue {
+    &:before {
+      background-color: $ribbon-blue;
+    }
+
+    &:after {
+      border-color: $ribbon-blue-bd $ribbon-blue-bd transparent $ribbon-blue-bd;
+    }
+  }
+
+  &.ribbon--orange {
+    &:before {
+      background-color: $ribbon-orange;
+    }
+
+    &:after {
+      border-color: $ribbon-orange-bd $ribbon-orange-bd transparent $ribbon-orange-bd;
+    }
+  }
+}
+
+.flag {
+  display: inline-block;
+  border-width: 12px 12px 12px 38px;
+  border-style: solid;
+  user-select: none;
+  z-index: 1;
+
+  span {
+    color: $white;
+    font-size: $font-size-xxs;
+    position: absolute;
+    left: -30px;
+    top: -8.5px;
+    z-index: 1;
+  }
+
+  &.flag-primary {
+    border-color: $primary transparent $primary $primary;
+  }
+
+  &.flag-secondary {
+    border-color: $secondary transparent $secondary $secondary;
+  }
+}
+
+.flag-lg {
+  border-width: 15px 15px 15px 50px;
+
+  span {
+    font-size: $font-size-md;
+    left: -38px;
+    top: -10px;
+  }
+}
+
+.status-label {
+  border-radius: 2px;
+  font-size: .75rem;
+  padding: .125rem .625rem;
+  user-select: none;
+
+  &.label--open {
+    background-color: $primary;
+    color: $white;
+  }
+
+  &.label--unfinish {
+    background-color: $status-label-unfinish;
+    color: $lightgrey;
+  }
+
+  &.label--close {
+    background: $status-label-close;
+    color: $white;
+  }
+}
+
+/*badge*/
+.badge {
+  border-radius: 2px;
+  font-size: $font-size-xxs;
+  padding: .125rem .375rem;
+  transition: all .25s ease-in-out;
+  user-select: none;
+  color: $white;
+
+  @each $color, $value in $colors {
+    &.badge--#{$color} {
+      background-color: $value;
+    }
+  }
+}

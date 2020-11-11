@@ -1,0 +1,382 @@
+@charset "utf-8";
+
+$linkcolor: 				#52B8C5 !default;
+
+$primary: 				#52B8C5 !default;
+$secondary: 			#77C1BD !default;
+$apply: 				#4983db !default;
+$positive: 				#1cc6b3 !default;
+$negative: 				#ff9149 !default;
+$danger: 				#fa626b !default;
+$warning: 				#FFC84D !default;
+$success: 				#1cc65e !default;
+$cyan: 					#1cafc6 !default;
+$yellow: 				#ffeb3b !default;
+$pink: 					#E45B72 !default;
+$purple: 				#6967ce !default;
+$black: 			    #1A1E1E !default;
+$grey: 					#798b8b !default;
+$lightgrey: 			#cbd2d2 !default;
+$white: 				#fff 	!default;
+
+// Brands colors
+$facebook:      	#3b5999 !default;
+$twitter:       	#1da1f2 !default;
+$google-plus:   	#dd4b39 !default;
+$instagram:     	#e4405f !default;
+$pinterest:     	#bd081c !default;
+$youtube:       	#cd201f !default;
+$slack:         	#3aaf85 !default;
+$dribbble:      	#ea4c89 !default;
+$github:        	#222222 !default;
+$dropbox:       	#1E90FF !default;
+$twitch:        	#4B367C !default;
+$paypal:        	#ecb32c !default;
+$behance:       	#0057ff !default;
+$reddit:       		#E84422 !default;
+
+// Black Colors
+$white:   			#fff	!default;
+$gray-100: 			#f8fafb !default;
+$gray-200: 			#d9e2e7 !default;
+$gray-300: 			#b9cbd4 !default;
+$gray-400: 			#9ab3c0 !default;
+$gray-500: 			#7b9cac !default;
+$gray-600: 			#6c757d !default;
+$gray-700: 			#72828a !default;
+$gray-800: 			#343a40 !default;
+$gray-900: 			#374c57 !default;
+$black:    			#233138 !default;
+// Another
+$btn_lightgrey: 	#C4CDD5 !default;
+$btn_light: 		#d9e2e7 !default;
+
+
+$colors: () !default;
+$colors: 	map-merge(
+  	(
+		"linkblue": 		$linkcolor,
+	    "primary":     		$primary,
+	    "secondary":     	$secondary,
+	    "apply":       		$apply,
+	    "positive":        	$positive,
+	    "negative":     	$negative,
+	    "danger": 			$danger,
+		"warning": 			$warning,
+		"success": 			$success,
+		"cyan": 			$cyan,
+		"yellow": 			$yellow,
+		"pink": 			$pink,
+		"purple": 			$purple,
+	    "grey":       		$grey,
+		"black":  			$black,
+		"white":  			$white,
+	),
+	$colors
+	);
+
+$greys: () !default;
+$greys: map-merge(
+  	(
+	    "100": $gray-100,
+	    "200": $gray-200,
+	    "300": $gray-300,
+	    "400": $gray-400,
+	    "500": $gray-500,
+	    "600": $gray-600,
+	    "700": $gray-700,
+	    "800": $gray-800,
+	    "900": $gray-900
+	),
+	$greys
+	);
+
+// Btn Colors
+$btn-colors: () !default;
+$btn-colors:	map-merge(
+	(
+	  	"lightgrey":    	$btn_lightgrey,
+	  	"light": 			$btn_light,
+	    "primary":     		$primary,
+	    "secondary":     	$secondary,
+	    "apply":       		$apply,
+	    "positive":        	$positive,
+	    "negative":     	$negative,
+	    "danger": 			$danger,
+		"warning": 			$warning,
+		"success": 			$success,
+		"cyan": 			$cyan,
+		"yellow": 			$yellow,
+		"pink": 			$pink,
+		"purple": 			$purple,
+	    "grey":       		$gray-500,
+	    "black":  			$black,
+	),
+	$btn-colors
+	);
+
+$brand-colors: ()!default;
+$brand-colors: map-merge(
+	(
+		"facebook":     $facebook,
+		"twitter":      $twitter,
+		"google-plus":  $google-plus,
+		"instagram":    $instagram,
+		"pinterest":    $pinterest,
+		"youtube":      $youtube,
+		"slack":        $slack,
+		"dribbble":     $dribbble,
+		"dropbox":      $dropbox,
+	    "twitch":       $twitch,
+		"paypal":       $paypal,
+		"behance":      $behance,
+		"reddit" :      $reddit,
+		"github":       $github,
+	),
+	$brand-colors
+	);
+
+// Options
+$enable-rounded:                              true !default;
+$enable-prefers-reduced-motion-media-query:   true !default;
+$enable-transitions:                          true !default;
+$enable-shadows:                              true !default;
+$enable-gradients:                            false !default;
+$enable-pointer-cursor-for-buttons:           true !default;
+
+//== Screen
+$screen-xs:                  	480px !default;
+$screen-xs-min:              	$screen-xs !default;
+$screen-phone:               	$screen-xs-min !default;
+
+$screen-sm:                  	768px !default;
+$screen-sm-min:              	$screen-sm !default;
+$screen-tablet:              	$screen-sm-min !default;
+
+$screen-md:                  	992px !default;
+$screen-md-min:              	$screen-md !default;
+$screen-desktop:             	$screen-md-min !default;
+
+$screen-lg:                  	1200px !default;
+$screen-lg-min:              	$screen-lg !default;
+$screen-lg-desktop:          	$screen-lg-min !default;
+
+$screen-xs-max:              	($screen-sm-min - 1) !default;
+$screen-sm-max:              	($screen-md-min - 1) !default;
+$screen-md-max:              	($screen-lg-min - 1) !default;
+
+//== Grid system
+$grid-columns:              	12 !default;
+$grid-gutter-width:         	16px !default;
+$grid-float-breakpoint:     	$screen-sm-min !default;
+$grid-float-breakpoint-max: 	($grid-float-breakpoint - 1) !default;
+
+
+//== Container sizes
+$container-tablet:             	(720px + $grid-gutter-width) !default;
+$container-sm:                 	$container-tablet !default;
+
+$container-desktop:            	(940px + $grid-gutter-width) !default;
+$container-md:                 	$container-desktop !default;
+
+$container-large-desktop:      	(1140px + $grid-gutter-width) !default;
+$container-lg:                 	$container-large-desktop !default;
+
+// The yiq lightness value that determines when the lightness of color changes from "black" to "light". Acceptable values are between 0 and 255.
+$yiq-contrasted-threshold:  	150 !default;
+
+// Customize the light and black text colors for use in our YIQ color contrast function.
+$yiq-text-black:             	$gray-900 !default;
+$yiq-text-light:            	$white !default;
+
+// Body
+$body-bg:                   	$white !default;
+$body-color:                	$black !default;
+
+// Links
+$link-color:               		$linkcolor !default;
+$link-decoration:           	none !default;
+$link-hover-color:          	blacken($link-color, 15%) !default;
+$link-hover-decoration:     	underline !default;
+
+// Components
+$line-height:              	  	1.5 !default;
+$line-height-lg:              	1.75 !default;
+$line-height-md:              	1.375 !default;
+$line-height-sm:              	1.25 !default;
+$line-height-xs:              	1.125 !default;
+
+$border-width:                	1px !default;
+
+$border-style-solid:            solid !default;
+$border-style-dashed:           dashed !default;
+$border-style-dotted:           dotted !default;
+
+
+$border-color:                	$gray-300 !default;
+$border-color_1: 				#eff3f5	!default;
+$border-color_2: 				#dfe6e9	!default;
+$border-color_3: 				#e9eef1	!default;
+
+$border-radius:               	.125rem !default;
+$border-radius-lg:            	.5rem !default;
+$border-radius-md:            	.375rem !default;
+$border-radius-sm:            	.25rem !default;
+$border-radius-xs:            	.0625rem !default;
+$rounded-pill:                	50rem !default;
+
+$border-radius--px:             2px !default;
+$border-radius-lg--px:          8px !default;
+$border-radius-md--px:          6px !default;
+$border-radius-sm--px:          4px !default;
+$border-radius-xs--px:          1px !default;
+$border-radius-rounded:         50% !default;
+
+$box-shadow:                  	0 .5rem 1rem rgba($black, .15) !default;
+$box-shadow-lg:               	0 1rem 3rem rgba($black, .175) !default;
+$box-shadow-md:               	0 .75rem 2.5rem rgba($black, .125) !default;
+$box-shadow-sm:               	0 .375rem .75rem rgba($black, .075) !default;
+$box-shadow-xs:               	0 .125rem .25rem rgba($black, .025) !default;
+$header-box-shadow:				0 .5rem 2.5rem rgba(35, 49, 56,.025),0 .9375rem 1.375rem rgba(35, 49, 56,.0375),0 .25rem .5rem rgba(35, 49, 56,0.05),0 .125rem .1875rem rgba(35, 49, 56,.0625);
+
+
+$transition-base:             all .25s ease-in-out 	!default;
+$transition-fade:             opacity .15s linear 	!default;
+$transition-collapse:         height .35s ease 		!default;
+// Typography
+
+$font-family-sans-serif:      	'Rubik', -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Microsoft JhengHei', "微軟正黑體", 'PingFang SC', 'Noto Sans CJK TC', sans-serif !default;
+$font-family-monospace:       	'Rubik', -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Microsoft JhengHei', "微軟正黑體", 'PingFang SC', 'Noto Sans CJK TC', sans-serif !default;
+$font-family-base:            	'Rubik', -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Microsoft JhengHei', "微軟正黑體", 'PingFang SC', 'Noto Sans CJK TC', sans-serif !default;
+$font-size-html-base:			16px !default;
+$font-size-html-md:				15px !default;
+$font-size-html-sm:				14px !default;
+$font-size-html-xs:				13px !default;
+
+
+$font-size-none:              	0 !default;
+$font-size-base:              	1rem !default;
+$font-size-lg:                	$font-size-base * 1.25 !default;
+$font-size-md:                	$font-size-base * .9375 !default;
+$font-size-sm:                	$font-size-base * .875 !default;
+$font-size-xs:                	$font-size-base * .8125 !default;
+$font-size-xxs:                	$font-size-base * .75 !default;
+
+$font-weight-lighter:         	lighter !default;
+$font-weight-light:           	300 !default;
+$font-weight-normal:          	400 !default;
+$font-weight-bold:            	700 !default;
+$font-weight-bolder:          	bolder !default;
+
+$font-weight-base:            	$font-weight-normal !default;
+$line-height-base:            	1.5 !default;
+
+$h1-font-size:                	$font-size-base * 2.5 !default;
+$h2-font-size:                	$font-size-base * 2.25 !default;
+$h3-font-size:                	$font-size-base * 2 !default;
+$h4-font-size:                	$font-size-base * 1.75 !default;
+$h5-font-size:                	$font-size-base * 1.5 !default;
+$h6-font-size:                	$font-size-base * 1.125 !default;
+$para-font-size:                $font-size-base !default;
+$span-font-size:                $font-size-base * 0.875 !default;
+$label-font-size:               $font-size-base * 0.9375 !default;
+
+// Buttons + Forms
+$input-btn-padding-y:         	.625rem !default;
+$input-btn-padding-x:         	1.125rem !default;
+$input-btn-font-family:       	null !default;
+$input-btn-font-size:         	$font-size-base * .875 !default;
+$input-btn-line-height:       	$line-height-base !default;
+
+$input-btn-focus-width:       	.125rem !default;
+$input-btn-focus-color:       	rgba($linkcolor, .25) !default;
+$input-btn-focus-box-shadow:  	0 0 0 $input-btn-focus-width $input-btn-focus-color !default;
+
+$input-btn-padding-y-xxs:       .25rem !default;
+$input-btn-padding-x-xxs:       .375rem !default;
+$input-btn-font-size-xxs:       $font-size-base * .75 !default;
+$input-btn-line-height-xxs:     $line-height-sm !default;
+
+$input-btn-padding-y-xs:       	.375rem !default;
+$input-btn-padding-x-xs:      	.75rem !default;
+$input-btn-font-size-xs:      	$font-size-base * .75 !default;
+$input-btn-line-height-xs:    	$line-height-sm !default;
+
+$input-btn-padding-y-sm:      	.5rem !default;
+$input-btn-padding-x-sm:      	.875rem !default;
+$input-btn-font-size-sm:      	$font-size-base * .8125 !default;
+$input-btn-line-height-sm:    	$line-height-sm !default;
+
+$input-btn-padding-y-md :      	.75rem !default;
+$input-btn-padding-x-md :      	1.5rem !default;
+$input-btn-font-size-md :      	$font-size-base * .9375 !default;
+$input-btn-line-height-md :    	$line-height-lg !default;
+
+
+$input-btn-padding-y-lg:      	1rem !default;
+$input-btn-padding-x-lg:      	3rem !default;
+$input-btn-font-size-lg:      	$font-size-base !default;
+$input-btn-line-height-lg:    	$line-height-lg !default;
+
+$input-btn-border-width:      	$border-width !default;
+
+// Buttons
+$btn-padding-y:               	$input-btn-padding-y !default;
+$btn-padding-x:               	$input-btn-padding-x !default;
+$btn-font-family:             	$input-btn-font-family !default;
+$btn-font-size:               	$input-btn-font-size !default;
+$btn-line-height:             	$input-btn-line-height !default;
+
+$btn-padding-y-xxs:            	$input-btn-padding-y-xxs !default;
+$btn-padding-x-xxs:            	$input-btn-padding-x-xxs !default;
+$btn-font-size-xxs:            	$input-btn-font-size-xxs !default;
+$btn-line-height-xxs:          	$input-btn-line-height-xxs !default;
+
+$btn-padding-y-xs:            	$input-btn-padding-y-xs !default;
+$btn-padding-x-xs:            	$input-btn-padding-x-xs !default;
+$btn-font-size-xs:            	$input-btn-font-size-xs !default;
+$btn-line-height-xs:          	$input-btn-line-height-xs !default;
+
+$btn-padding-y-sm:            	$input-btn-padding-y-sm !default;
+$btn-padding-x-sm:            	$input-btn-padding-x-sm !default;
+$btn-font-size-sm:            	$input-btn-font-size-sm !default;
+$btn-line-height-sm:          	$input-btn-line-height-sm !default;
+
+$btn-padding-y-md:            	$input-btn-padding-y-md !default;
+$btn-padding-x-md:            	$input-btn-padding-x-md !default;
+$btn-font-size-md:            	$input-btn-font-size-md !default;
+$btn-line-height-md:          	$input-btn-line-height-md !default;
+
+$btn-padding-y-lg:            	$input-btn-padding-y-lg !default;
+$btn-padding-x-lg:            	$input-btn-padding-x-lg !default;
+$btn-font-size-lg:            	$input-btn-font-size-lg !default;
+$btn-line-height-lg:          	$input-btn-line-height-lg !default;
+
+$btn-border-width:            	$input-btn-border-width !default;
+
+$btn-font-weight:             	$font-weight-normal !default;
+$btn-box-shadow:              	inset 0 1px 0 rgba($white, .15), 0 1px 1px rgba($black, .075) !default;
+$btn-focus-width:             	$input-btn-focus-width !default;
+$btn-focus-box-shadow:        	$input-btn-focus-box-shadow !default;
+$btn-disabled-opacity:        	.65 !default;
+$btn-active-box-shadow:       	inset 0 3px 5px rgba($black, .125) !default;
+
+$btn-link-disabled-color:     	$gray-600 !default;
+
+$btn-block-spacing-y:         	.5rem !default;
+
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius:           	$border-radius !default;
+$btn-border-radius-lg:        	$border-radius !default;
+$btn-border-radius-md:        	$border-radius !default;
+$btn-border-radius-xs:        	$border-radius !default;
+$btn-border-radius-xxs:       	$border-radius !default;
+$btn-border-radius-sm:        	$border-radius !default;
+$btn-transition:              	color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
+
+$custom-forms-transition:     	background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
+
+// margin & padding default
+$default-num:     				1rem !default;
+
+

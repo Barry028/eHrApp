@@ -1,0 +1,553 @@
+/* Header ======================== */
+
+.ehr-hd {
+  background-color: $white;
+  padding: .25rem 0;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+
+  .logo {
+    display: block;
+    float: left;
+
+    a {
+      height: 3rem;
+      display: block;
+    }
+
+    img {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .nav-bar {
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: calc(100% - 141px);
+
+    ul {
+      width: 100%;
+      float: right;
+      font-size: 0;
+      text-align: right;
+    }
+
+    li {
+      display: inline-block;
+      vertical-align: middle;
+
+      &:not(:nth-child(4)) {
+        padding: 1.5rem;
+
+        @media all and (max-width: 600px) {
+          display: none;
+        }
+      }
+
+      &:nth-child(4) {
+        padding: 0 1.5rem;
+
+        @media all and (max-width: 480px) {
+          padding: 0;
+        }
+      }
+
+      > {
+        a:not(.btn) {
+          color: $black;
+          font-size: 0.9375rem;
+
+          &:hover, &:active, &.active {
+            color: $primary;
+          }
+        }
+
+        .btn {
+          width: 200px;
+          font-size: 14px;
+          padding: .375rem;
+        }
+      }
+    }
+  }
+}
+
+/* Section -- ehr-bn ======================== */
+
+.ehr-bn {
+  background: $primary url("../../img/first-phone@2x.png") no-repeat left bottom;
+  background-size: contain;
+  color: $white;
+  padding: 5.5rem 0 3.5rem;
+  animation: 1.25s ease-in-out 0s normal none 1 running fadeIn;
+
+  .title {
+    text-align: right;
+    margin: 2rem 0 0 0;
+
+    .title-container {
+      font-size: 0;
+      font-weight: normal;
+    }
+  }
+}
+
+.title-container {
+  .de-txt {
+    color: $white;
+    font-size: 2.25rem;
+    margin-left: .75rem;
+    letter-spacing: 2px;
+  }
+}
+
+.ehr-bn {
+  .title .des {
+    color: $white;
+    font-size: 1.25rem;
+    margin: 2rem 0 1rem;
+    letter-spacing: 4px;
+
+    strong {
+      font-size: 1.5rem;
+    }
+  }
+
+  .icon-list {
+    color: $white;
+    padding: 1rem 0;
+
+    li {
+      border: 1px solid rgba($white, 0.66);
+      border-radius: 50%;
+      display: inline-block;
+      margin: 0 .5rem;
+      padding: .75rem;
+    }
+
+    i {
+      font-size: 3.5rem;
+      display: block;
+    }
+
+    li:hover {
+      animation: 800ms ease-in-out 0s normal none 1 running tada;
+    }
+  }
+
+  .btn-cnt {
+    margin: 1rem .75rem 0 0;
+
+    .btn--try {
+      padding: 1rem 3rem;
+    }
+  }
+}
+
+.btn--try {
+  background-color: $pink;
+  color: $white;
+  display: inline-block;
+  font-size: 1.125rem;
+  padding: .75rem 2rem;
+  text-transform: uppercase;
+  transition: .25s all ease-in-out;
+  user-select: none;
+
+  &:hover {
+    box-shadow: inset 16rem 0 0 0 $white;
+    color: $pink;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .title-container {
+    .bg-txt {
+      font-size: 2.5rem;
+
+      @media all and (max-width: 480px) {
+        font-size: 2.25rem;
+      }
+    }
+
+    .de-txt {
+      font-size: 1.75rem;
+
+      @media all and (max-width: 480px) {
+        font-size: 1.5rem;
+        display: block;
+      }
+    }
+  }
+}
+
+/* Section -- Ehr Title ======================== */
+
+.ehr-title {
+  margin-bottom: 1.5rem;
+
+  i {
+    display: block;
+    color: $primary;
+    font-size: 4.5rem;
+  }
+
+  h2 {
+    display: inline-block;
+    vertical-align: middle;
+    border-bottom: 3px solid $primary;
+    font-size: 2.5rem;
+    letter-spacing: 4px;
+
+    @media all and (max-width: 480px) {
+      font-size: 2rem;
+    }
+  }
+}
+
+/* Section -- ehr-punch ======================== */
+
+.ehr-punch {
+  background-color: $white;
+  text-align: center;
+  padding: 3.5rem 0 3.5rem;
+
+  .para {
+    font-size: 1.25rem;
+    color: $grey;
+    letter-spacing: 2px;
+    margin-top: 2.5rem;
+  }
+
+  .img-list {
+    padding: 3rem 0;
+
+    li {
+      padding: 1rem;
+
+      > img:hover {
+        transform: scale(1.125);
+        transition: .25s ease-in-out all;
+      }
+    }
+  }
+
+  .icon-list {
+    color: #cbd2d2;
+    font-size: 0;
+
+    li {
+      display: inline-block;
+      vertical-align: top;
+      text-align: center;
+      width: 16.66666667%;
+
+      @media all and (max-width: 768px) {
+        width: 33.33333333%;
+        margin: 1rem 0;
+      }
+
+      &:not(:last-child):after {
+        content: '';
+        background-color: #e6eaea;
+        width: 0.0625rem;
+        height: 50%;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+      }
+
+      i {
+        color: lighten($primary, 10%);
+        display: block;
+        font-size: 5rem;
+        margin: 0 auto 1rem auto;
+
+        &:hover {
+          color: $primary;
+          animation: 800ms ease-in-out 0s normal none 1 running tada;
+        }
+      }
+
+      p {
+        color: $grey;
+        display: inline-block;
+        font-size: .9375rem;
+        letter-spacing: 2px;
+        padding-bottom: .5rem;
+
+        &:after {
+          content: '';
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          width: 80%;
+          height: 2px;
+          transform: translateX(-50%);
+          background-color: #cfe9e7;
+        }
+      }
+    }
+  }
+}
+
+/* Section -- ehr-form ======================== */
+
+.ehr-form {
+  background-color: #EAF8FA;
+  padding: 3.5rem 0 5.5rem;
+  text-align: center;
+
+  .form-img {}
+
+  .form-ul {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+
+    li {
+      position: absolute;
+      height: 12rem;
+      width: 12rem;
+      background-color: $primary;
+      border: lighten($primary, 30%) solid 6px;
+      border-radius: 50%;
+
+      @media all and (max-width: 768px) {
+        background-color: $primary;
+      }
+
+      @media all and (max-width: 600px) {
+        height: 11rem;
+        width: 11rem;
+      }
+
+      @media all and (max-width: 480px) {
+        height: 10rem;
+        width: 10rem;
+      }
+
+      &:nth-child(1) {
+        left: 11rem;
+        top: 18.9375rem;
+
+        @media all and (max-width: 600px) {
+          left: 4rem;
+          top: 18.9375rem;
+        }
+
+        @media all and (max-width: 480px) {
+          left: 5rem;
+          top: 21rem;
+        }
+      }
+
+      &:nth-child(2) {
+        left: 3.1875rem;
+        top: 6.25rem;
+
+        @media all and (max-width: 600px) {
+          left: 4.1875rem;
+          top: 5.25rem;
+        }
+
+        @media all and (max-width: 480px) {
+          left: 3rem;
+          top: 10rem;
+        }
+      }
+
+      &:nth-child(3) {
+        right: 4rem;
+        top: -.75rem;
+
+        @media all and (max-width: 600px) {
+          right: 8rem;
+          top: 0.25rem;
+        }
+      }
+
+      &:nth-child(4) {
+        right: 0;
+        top: 12.25rem;
+
+        @media all and (max-width: 600px) {
+          right: 3.75rem;
+          top: 14.25rem;
+        }
+
+        @media all and (max-width: 480px) {
+          right: 3rem;
+          top: 10rem;
+        }
+      }
+
+      &:nth-child(5) {
+        right: 10rem;
+        top: 22rem;
+
+        @media all and (max-width: 600px) {
+          right: 12rem;
+          top: 25rem;
+        }
+
+        @media all and (max-width: 480px) {
+          right: 4rem;
+          top: 21rem;
+        }
+      }
+
+      > p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.75rem;
+        color: $white;
+        letter-spacing: 2px;
+
+        @media all and (max-width: 600px) {
+          font-size: 1.25rem;
+        }
+
+        @media all and (max-width: 480px) {
+          font-size: 1.25rem;
+        }
+      }
+    }
+  }
+}
+
+
+/* Section -- ehr-editor ======================== */
+
+.ehr-editor {
+  background-color: $white;
+  padding: 3.5rem 0 0;
+  text-align: center;
+
+  .para {
+    font-size: 1.25rem;
+    color: $grey;
+    letter-spacing: 2px;
+    margin-top: 2.5rem;
+
+    .txt--pink {
+      font-size: 2.25rem;
+    }
+  }
+
+  .editor-img {
+    margin: 1.5rem 0 0 0;
+
+    img {}
+  }
+}
+
+/* Section -- ehr-footer ======================== */
+
+.ehr-footer {
+  background-color: $primary;
+  padding: 5rem 0 5rem;
+  text-align: center;
+
+  .code-cnt {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .txt-cnt {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    color: $white;
+    padding-left: 2rem;
+
+    @media all and (max-width: 516px) {
+      padding-left: 0;
+      width: 100%;
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    ul {
+      margin-top: 1.5rem;
+
+      h4 {
+        font-size: 1.25rem;
+        font-weight: normal;
+        letter-spacing: 1px;
+        margin-bottom: 1.125rem;
+
+        &:before {
+          content: '';
+          width: 60%;
+          height: 3px;
+          background-color: $warning;
+          position: absolute;
+          left: 0;
+          bottom: -2px;
+          z-index: 1;
+
+          @media all and (max-width: 516px) {
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        }
+
+        &:after {
+          content: '';
+          border-top: 1px dotted $white;
+          position: absolute;
+          bottom: -1px;
+          left: 0;
+          width: 80%;
+
+          @media all and (max-width: 516px) {
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        }
+
+        i {
+          font-size: 2.5rem;
+        }
+      }
+
+      li {
+        font-size: 1rem;
+        margin: .625rem 0;
+
+        a {
+          color: $white;
+          font-family: monospace;
+
+          &:hover {
+            color: lighten($warning, 15%);
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Section -- ehr-footer ======================== */
+
+.ehr-copyright {
+  background-color: darken($primary, 20%);
+  text-align: center;
+  padding: .75rem 0;
+  color: $white;
+
+  .copyright {
+    font-size: 0.875rem;
+  }
+}
